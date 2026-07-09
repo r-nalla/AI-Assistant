@@ -1,8 +1,13 @@
 print("====================================")
 print(" Welcome to AI Assistant ")
+print(" Type 'exit' to stop ")
 print("====================================")
 
-name = input("What is your name? ")
+while True:
+    user_message = input("You: ")
 
-print(f"Hello {name}!")
-print("Your AI journey starts today 🚀")
+    if user_message.lower() == "exit":
+        print("AI Assistant: Bye dude, good work today!")
+        break
+
+    print(f"AI Assistant: You said '{user_message}'")
